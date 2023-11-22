@@ -15,7 +15,7 @@ from io import BytesIO
 from PIL import Image
 from PIL import ImageDraw
 import json
-
+from streamlit.components.v1 import html
 
 
 
@@ -64,7 +64,7 @@ if app_mode=='Input Text':
   html("""<script
 	    type="module"
 	    src="https://gradio.s3-us-west-2.amazonaws.com/4.5.0/gradio.js"></script>
-      <gradio-app src="https://sureshkrishna01-sureshkrishna01-newsclassifier.hf.space"></gradio-app>
+      	    <gradio-app src="https://sureshkrishna01-sureshkrishna01-newsclassifier.hf.space"></gradio-app>
 
         """,height=1000,
         )
