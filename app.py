@@ -15,8 +15,7 @@ from io import BytesIO
 from PIL import Image
 from PIL import ImageDraw
 import json
-import torch
-import bs4
+
 
 
 
