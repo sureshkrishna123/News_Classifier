@@ -62,7 +62,7 @@ if app_mode=='Input Text':
   st.text("Classify the News or Article")
   
   st.text("wait for sometime to load and display the model")
-    html("""<script
+  html("""<script
 	    type="module"
 	    src="https://gradio.s3-us-west-2.amazonaws.com/4.5.0/gradio.js"></script>
       <gradio-app src="https://sureshkrishna01-sureshkrishna01-newsclassifier.hf.space"></gradio-app>
