@@ -16,6 +16,7 @@ from PIL import Image
 from PIL import ImageDraw
 import json
 from streamlit.components.v1 import html
+import gradio as gr
 
 
 
@@ -61,10 +62,12 @@ if app_mode=='Input Text':
   st.text("Classify the News or Article")
   
   st.text("wait for sometime to load and display the model")
-  html("""<script
-	    type="module"
-	    src="https://gradio.s3-us-west-2.amazonaws.com/4.5.0/gradio.js"></script>
-      	    <gradio-app src="https://sureshkrishna01-sureshkrishna01-newsclassifier.hf.space"></gradio-app>
+  # html("""<script
+	 #    type="module"
+	 #    src="https://gradio.s3-us-west-2.amazonaws.com/4.5.0/gradio.js"></script>
+  #     	    <gradio-app src="https://sureshkrishna01-sureshkrishna01-newsclassifier.hf.space"></gradio-app>
 
-        """,height=1000,
-        )
+  #       """,height=1000,
+  #       )
+  gr.load("models/sureshkrishna01/NewsClassifier").launch()
+	
